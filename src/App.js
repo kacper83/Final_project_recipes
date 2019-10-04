@@ -6,8 +6,9 @@ import {
     Link,
     NavLink
 } from 'react-router-dom';
-import { Recipe } from "./components/Recipe/Recipe";
+
 import { NotFound} from "./components/NotFound";
+import RecipesApp from "./components/RecipesFilter";
 import './App.css';
 
 
@@ -27,7 +28,7 @@ class About extends Component {
 class Navigation extends Component {
     render() {
         const activeStyle = {
-            color: "red",
+            color: "green",
             fontWeight: "bold"
         };
         return (
@@ -46,7 +47,7 @@ const App = () => (
                 <Navigation/>
                 <Switch>
                     <Route exact path='/' component={Main}/>
-                    <Route path='/recipe' component={Recipe}/>
+                    <Route path='/recipe' component={RecipesApp}/>
                     <Route path='/about' component={About}/>
                     <Route component={NotFound}/>
                 </Switch>
