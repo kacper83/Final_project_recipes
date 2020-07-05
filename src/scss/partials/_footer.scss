@@ -1,0 +1,15 @@
+@import "colors";
+
+.footer {
+  width: 1200px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: $bg_color;
+
+  i {
+    padding: 10px;
+  }
+}

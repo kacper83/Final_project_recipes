@@ -1,7 +1,9 @@
 import React from "react";
+import { Link } from 'react-router-dom';
+import '../../scss/partials/_recipes.scss';
 
 const Recipes = ({ filter, recipes, changeFilter }) => (
-    <div>
+    <div className="recipes">
         <h1>Przepisy</h1>
         <select value={filter} onChange={ changeFilter }>
             <option>wszystkie</option>
@@ -11,7 +13,11 @@ const Recipes = ({ filter, recipes, changeFilter }) => (
             <option>ciasto</option>
         </select>
         <ul>
-            { recipes.map(({ title }) => <li key={title}>{title}</li>) }
+            { recipes.map(({ title }) =>
+                <li key={title}>
+                    <Link key={title}>{title}</Link>
+
+                </li>) }
         </ul>
     </div>
 );

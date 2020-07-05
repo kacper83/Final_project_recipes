@@ -1,0 +1,56 @@
+@import "colors.scss";
+
+.header {
+  width: 1200px;
+  height: 100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  background-color: $bg_color;
+
+  .logo {
+    margin-left:75px;
+    color: black;
+    font-family: 'Charmonman', cursive;
+    font-weight: bold;
+    span{
+      color: green;
+    }
+  }
+  .nav {
+    margin-left: 150px;
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      list-style-type: none;
+
+      li {
+        margin: 30px;
+      }
+    }
+  }
+}
+
+.main {
+  width: 1200px;
+  height: 700px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("appetizer-bowl-bread-breakfast-539451.jpg");
+  background-size: cover;
+}
+
+footer {
+  width: 1200px;
+  height: 150px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

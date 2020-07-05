@@ -5,7 +5,7 @@ import {changeFilter} from "../redux/actions";
 
 const mapState = ({ recipes: { filter, list }}) => ({
     filter: filter,
-    recipes: filter === "all" ? list : list.filter(({ category }) => category === filter)
+    recipes: filter === "wszystkie" ? list : list.filter(({ category }) => category === filter)
 });
 
 const mapDispatch = (dispatch) => ({

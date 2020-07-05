@@ -2,7 +2,7 @@ import { combineReducers } from "redux";
 import {CHANGE_FILTER} from "./actions";
 
 const initialRecipesState = {
-    filter: "all",
+    filter: "wszystkie",
     list: [
         {
             id: 1,
@@ -11,7 +11,7 @@ const initialRecipesState = {
         },
         {
             id: 2,
-            title: "Krem z pomidorów",
+            title: "Krem z dyni",
             category: "zupa"
         },
         {
@@ -43,7 +43,6 @@ const recipes = (state = initialRecipesState, action) => {
             filter: action.payload
         }
     }
-
     return state;
 };
 
