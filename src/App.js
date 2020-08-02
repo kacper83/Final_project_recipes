@@ -11,6 +11,7 @@ import RecipesApp from "./components/RecipesFilter";
 import About from "./components/Recipe/AboutMe";
 import Contact from "./components/Recipe/Contact";
 import Footer from "./components/Recipe/Footer";
+import AdminPanel from "./components/Recipe/AdminPanel";
 import './scss/main.scss';
 import './scss/partials/_mainPage.scss';
 
@@ -56,6 +57,7 @@ const App = () => (
                     <Route path='/recipe' component={RecipesApp}/>
                     <Route path='/about' component={About}/>
                     <Route path='/contact' component={Contact}/>
+                    <Route path='/admin' component={AdminPanel}/>
                     <Route component={NotFound}/>
                 </Switch>
                 <footer>{<Footer/>}</footer>
